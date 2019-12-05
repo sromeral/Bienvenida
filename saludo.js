@@ -22,6 +22,7 @@ function validar(cadena) {
 
 var nombre = prompt("Escribe tu nombre");
 var apellido = prompt("Escribe tu apellido");
-if (validar(nombre) && validar(apellido)) {
-	mensaje("Hola, " + nombre + " " + apellido + ".");
+var dni = prompt("Escribe tu DNI");
+if (validar(nombre) && validar(apellido) && validar(dni)) {
+	mensaje("Hola, " + nombre + " " + apellido + " (DNI: " + dni + ")" +  ".");
 }
