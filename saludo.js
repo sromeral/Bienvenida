@@ -21,6 +21,7 @@ function validar(cadena) {
 }
 
 var nombre = prompt("Escribe tu nombre");
-if (validar(nombre)) {
-	mensaje("Hola, " + nombre + ".");
+var apellido = prompt("Escribe tu apellido");
+if (validar(nombre) && validar(apellido)) {
+	mensaje("Hola, " + nombre + " " + apellido + ".");
 }
